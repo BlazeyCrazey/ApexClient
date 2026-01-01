@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Client - Custom Minecraft Launcher</title>
+    <meta name="description" content="Apex Client is a custom Minecraft launcher with automatic mod installation, user detection, and seamless gameplay experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">A</span>
+                <span class="logo-text">Apex Client</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#download" class="nav-link">Download</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="https://www.youtube.com/@ApexClientMC" target="_blank" class="nav-link">YouTube</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Beta 1.0.1 Available</div>
+            <h1 class="hero-title">
+                The Ultimate<br>
+                <span class="gradient-text">Minecraft Experience</span>
+            </h1>
+            <p class="hero-description">
+                Apex Client is a custom Minecraft launcher designed for players who want more.
+                Automatic mod installation, user detection, and a seamless gameplay experience.
+            </p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7,10 12,15 17,10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Now
+                </a>
+                <a href="#features" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">1.21.1</span>
+                    <span class="stat-label">Minecraft Version</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Fabric</span>
+                    <span class="stat-label">Mod Loader</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Windows</span>
+                    <span class="stat-label">Platform</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need for the perfect Minecraft experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Automatic Mod Installation</h3>
+                    <p class="feature-description">
+                        The Apex Client mod is automatically installed when you create a Minecraft 1.21.1 instance with Fabric. No manual setup required.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">User Detection</h3>
+                    <p class="feature-description">
+                        See other Apex Client users in-game! Connect with the community and find fellow players on any server.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Modern Interface</h3>
+                    <p class="feature-description">
+                        Built on Prism Launcher, Apex Client offers a clean, modern interface with powerful instance management.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Microsoft Authentication</h3>
+                    <p class="feature-description">
+                        Secure login with your Microsoft account. Your credentials are never stored locally.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 4 23 10 17 10"></polyline>
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Auto Updates</h3>
+                    <p class="feature-description">
+                        Stay up to date automatically. The launcher checks for updates and keeps you on the latest version.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Full Customization</h3>
+                    <p class="feature-description">
+                        Manage multiple instances, install additional mods, resource packs, and shaders with ease.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-content">
+                    <div class="download-badge">Latest Release</div>
+                    <h2 class="download-title">Download Apex Client</h2>
+                    <p class="download-version">Version 1.0.1 Beta</p>
+                    <p class="download-description">
+                        Get started with Apex Client today. The installer will guide you through the setup process.
+                    </p>
+                    <div class="download-requirements">
+                        <h4>System Requirements</h4>
+                        <ul>
+                            <li>Windows 10/11 (64-bit)</li>
+                            <li>4GB RAM minimum (8GB recommended)</li>
+                            <li>Microsoft Account for Minecraft</li>
+                            <li>Java 21 (auto-installed if needed)</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/BlazeyCrazey/ApexClient-backend/releases/download/beta-1.0.1/ApexClient-BETA_1.0.1-win64.exe" class="btn btn-download">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download for Windows
+                        <span class="download-size">~35 MB</span>
+                    </a>
+                    <p class="download-note">
+                        By downloading, you agree to our terms of use. This software is provided as-is.
+                    </p>
+                </div>
+                <div class="download-visual">
+                    <div class="launcher-preview">
+                        <div class="preview-header">
+                            <span class="preview-dot"></span>
+                            <span class="preview-dot"></span>
+                            <span class="preview-dot"></span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="preview-sidebar">
+                                <div class="preview-item active"></div>
+                                <div class="preview-item"></div>
+                                <div class="preview-item"></div>
+                            </div>
+                            <div class="preview-main">
+                                <div class="preview-title"></div>
+                                <div class="preview-text"></div>
+                                <div class="preview-text short"></div>
+                                <div class="preview-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about Apex Client</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Is Apex Client free?</h3>
+                    <p class="faq-answer">Yes! Apex Client is completely free to download and use. You just need a valid Minecraft account.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is it safe to use?</h3>
+                    <p class="faq-answer">Absolutely. Apex Client is built on Prism Launcher, an open-source project. We don't collect any personal data beyond what's needed for the user detection feature.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I use it on servers?</h3>
+                    <p class="faq-answer">Yes! Apex Client works on any Minecraft server. The user detection feature lets you see other Apex Client users on the same server.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Will I get banned?</h3>
+                    <p class="faq-answer">Apex Client is a legitimate launcher that doesn't modify gameplay or give unfair advantages. It's safe to use on most servers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I install additional mods?</h3>
+                    <p class="faq-answer">Right-click your instance and select "Edit". You can add mods from Modrinth or CurseForge directly from the launcher.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What Minecraft versions are supported?</h3>
+                    <p class="faq-answer">Currently, the Apex Client mod is designed for Minecraft 1.21.1 with Fabric. You can still play other versions without the mod features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">A</span>
+                        <span class="logo-text">Apex Client</span>
+                    </a>
+                    <p class="footer-tagline">The Ultimate Minecraft Experience</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#download">Download</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="https://www.youtube.com/@ApexClientMC" target="_blank">YouTube</a></li>
+                            <li><a href="https://github.com/BlazeyCrazey/ApexClient" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apex Client. Not affiliated with Mojang or Microsoft.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
