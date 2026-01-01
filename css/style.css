@@ -91,16 +91,11 @@ img {
     font-size: 1.25rem;
 }
 
-.logo-icon {
+.logo-img {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1.25rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .nav-menu {
@@ -482,29 +477,77 @@ img {
     max-width: 400px;
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
+    position: relative;
 }
 
 .preview-header {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 8px;
-    padding: 16px;
+    padding: 12px 16px;
     background: rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid var(--border);
 }
 
-.preview-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--border);
+.preview-header::before {
+    content: 'Apex Client';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
-.preview-dot:first-child { background: #ff5f57; }
-.preview-dot:nth-child(2) { background: #febc2e; }
-.preview-dot:nth-child(3) { background: #28c840; }
+.preview-control {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Windows-style controls: minimize, maximize, close */
+.preview-control:first-child {
+    background: transparent;
+    border: 1px solid var(--text-muted);
+}
+.preview-control:first-child::after {
+    content: '';
+    width: 8px;
+    height: 1px;
+    background: var(--text-muted);
+}
+.preview-control:nth-child(2) {
+    background: transparent;
+    border: 1px solid var(--text-muted);
+}
+.preview-control:nth-child(3) {
+    background: transparent;
+}
+.preview-control:nth-child(3):hover {
+    background: #e81123;
+}
+.preview-control:nth-child(3)::before,
+.preview-control:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background: var(--text-muted);
+}
+.preview-control:nth-child(3)::before {
+    transform: rotate(45deg);
+}
+.preview-control:nth-child(3)::after {
+    transform: rotate(-45deg);
+}
 
 .preview-content {
     display: flex;
